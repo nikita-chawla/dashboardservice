@@ -24,12 +24,4 @@ public class DashboardController {
     public Dashboard getDashboardDetails() {
         return dashboardService.getDashboardDetails();
     }
-
-    @Value("${application.services.service1.url}")
-    private String service1ServiceUrl;
-
-    @GetMapping("/service1-service-url")
-    public String getService1ServiceUrl() {
-        return service1ServiceUrl;
-    }
 }

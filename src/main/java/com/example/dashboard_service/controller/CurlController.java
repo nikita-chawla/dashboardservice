@@ -14,6 +14,7 @@ public class CurlController {
     @Autowired
     private CurlService curlService;
 
+    @CrossOrigin(origins = "*")
     @PostMapping("/execute-curl")
     public ResponseEntity<String> executeCurl(@RequestBody CurlRequest curlRequest) {
         String curlCommand = curlRequest.getCommand();
